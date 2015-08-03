@@ -284,6 +284,7 @@ setup_workspace() {
 
   progress_reset "workspace" "setting up workspace..."
   if [ ! -z "$GOPATH" ]; then
+		HAS_WORKSPACE="yes"
     progress_done "workspace" "reusing workspace in $GOPATH"
     return
   fi
@@ -332,6 +333,10 @@ get_package() {
 
 print_summary() {
   PKG=$1
+
+	if [ $HAS_WORKSPACE ]; then
+		return
+	fi
 
   printf "\n${WHITE}packages are installed in %s/src${CLEAR}\n" "$GOPATH"
 	printf "please open a new terminal, or run \"exec -l $SHELL\"\n"
