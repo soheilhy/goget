@@ -15,3 +15,7 @@ curl -sL https://git.io/goget | bash -s -- golang.org/x/tools/cmd/goimports
 
 
 For go users, it is just like `go get`.
+
+![goget demo](http://raw.github.com/soheilhy/goget/master/assets/goget-ready.gif)
+
+
