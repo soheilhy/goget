@@ -6,9 +6,9 @@ It is designed for an easier setup process; mainly for the
 newcomers and people who are interested in a project but
 not necessarily programming in go.
 
-This is how to install an example package:
+This is an example on how to install `goimports` with `goget.sh`:
 ```bash
-curl -sL https://git.io/goget | bash -s -- github.com/soheilhy/cmux
+curl -sL https://git.io/goget | bash -s -- golang.org/x/tools/cmd/goimports
 ```
 
 ![goget demo](http://raw.github.com/soheilhy/goget/master/assets/goget.gif)
