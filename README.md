@@ -1,5 +1,5 @@
 # goget.sh: a little bit more than go get
-`goget.sh` is an all-in-one script to install a go package.
+goget.sh is an all-in-one script to install a go package.
 Before installing your package, it first installs go and
 initializes the go workspace (i.e., `$GOPATH`) if needed.
 It is designed for an easier setup process; mainly for the
